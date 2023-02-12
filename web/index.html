@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>3 Wybitnych Gitarzystów</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        <noscript>
+            <style>
+                #form, #Hello, #dialog, #local, #slide, #button3, #oc, .area, #opinion, .he{
+                    display: none;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body onload="imie()">
+        <div class="Container">
+            <div class="Header">
+                <div id="Logo"><h1>3 Wybitnych Gitarzystów</h1></div>
+                <form id="form">
+                    <label for="fname">Inne imię użytkownika? Popraw je:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Ktoś na pewno">
+                    <input type="button" value="Wyślij" onclick="loc();">
+                </form>
+                <div id="Hello"><h1 id="local"></h1></div>
+            </div>
+            <div class="Menu">
+            <h2>Menu<span class="expand">&equiv;</span></h2>
+            <h4>
+                <a class="active" href="index.html">
+                    Strona startowa
+                </a>
+                <br>
+                <br>
+                <a href="TonyIommi.html" class="divlink">
+                    Tony Iommi
+                </a>
+                <br>
+                <br>
+                <a href="DavidGilmour.html" class="divlink">
+                    David Gilmour
+                </a>
+                <br>
+                <br>
+                <a href="JimiHendrix.html" class="divlink">
+                    Jimi Hendrix
+                </a>
+            </h4>
+            <button id="button3" type="button" onclick="button3()">Widzisz element tekstu do poprawy? Kliknij i napraw to!</button><br><br>
+            <h3 id="hea">Miejsce na twoje notatki w tej sesji!</h3>
+            <textarea id="opinion" rows="10" cols="35">-->Wpisuj tutaj<--</textarea><br>
+            <button class="area" onclick="save_ses()">Zapisz</button>
+            <button class="area" onclick="load_ses()">Wczytaj</button>
+            </div>
+            <div class="Content">
+            <section>
+            <h2>Gitara</h2>
+            Gitara to wszechstronny instrument często wykorzystywany w komponowaniu wszelkiego rodzaju utworów lub też hobby wielu osób.
+            Strona ta powstała w hołdzie <strong>3 wybitnym gitarzystom</strong>, którzy swoją twórczością wpłynęli na historię muzyki oraz tego instrumentu.
+            Aby uhonorować ich wkład zapraszam do zapoznania się ze stroną.
+            </section>
+            <br><br><br>
+            <img class="photo" alt="Error" src="img/elektryk.jpg" width="500" height="470"/>
+            </div>
+            <div class="PanelS">
+                <img class="photo" alt="Error" src="img/akustyk.jpg" width="470" height="315"/>
+                <br><br>
+                <img class="photo" alt="Error" src="img/klasyk.jpg"/>
+            </div>
+            <div class="Footer">
+                <h4 id="oc">Po przejrzeniu strony oceń od 1 do 10:</h4>
+                <form id="slide">
+                <div id="slider">
+                    <div id="custom-handle" class="ui-slider-handle"></div>
+                </div>
+                <br>
+                <input type="submit" value="Wyślij">
+                </form><br>
+                <p></p>
+                Wykonanie - Sebastian Kutny &copy; Wszelkie prawa zastrzeżone
+            </div>
+        </div>
+    </body>
+</html>

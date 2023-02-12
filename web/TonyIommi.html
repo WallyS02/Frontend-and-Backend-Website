@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tony Iommi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <noscript>
+            <style>
+                #button1, #button2, #button3{
+                    display: none;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <div class="Container">
+            <div class="Header">
+            <div>
+                <div id="Logo"><h1>Tony Iommi</h1></div>
+                <div id="Hello"><h1>Black Sabbath</h1></div>
+            </div>
+            </div>
+            <div class="Menu">
+                <h2>Menu<span class="expand">&equiv;</span></h2>
+                <h4>
+                    <a href="index.html" class="divlink">
+                        Strona startowa
+                    </a>
+                    <br>
+                    <br>
+                    <a class="active" href="TonyIommi.html">
+                        Tony Iommi
+                    </a>
+                    <br>
+                    <br>
+                    <a href="DavidGilmour.html" class="divlink">
+                        David Gilmour
+                    </a>
+                    <br>
+                    <br>
+                    <a href="JimiHendrix.html" class="divlink">
+                        Jimi Hendrix
+                    </a>
+                </h4>
+                <button id="button3" type="button" onclick="button3()">Widzisz element tekstu do poprawy? Kliknij i napraw to!</button>
+                <h3 id="hea">Miejsce na twoje notatki w tej sesji!</h3>
+            <textarea id="opinion" rows="4" cols="35">-->Wpisuj tutaj<--</textarea><br>
+            <button class="area" onclick="save_ses()">Zapisz</button>
+            <button class="area" onclick="load_ses()">Wczytaj</button>
+            </div>
+            <div class="Content">
+            <section id="s1">
+            <h2>Frank Anthony Iommi</h2><br>
+            <div id="dialog" title="Ważne!">Wszystkie pliki audio są chronione prawem autorskim wykonawców, strona nie czerpie z nich żadnych korzyści finansowych, ani nie ma na celu naruszenia praw autorskich!</div>
+            (ur. 19 lutego 1948 w Birmingham) – brytyjski muzyk, gitarzysta i producent, założyciel grupy muzycznej Black Sabbath.</section>
+            <br><br>
+            <button id="button2" type="button" onclick="button2()">Słaby wzrok? Powiększ klikając!</button><br><br>
+            <section id="s2">
+            Urodził się w rodzinie włoskich emigrantów: Sylvii Marii (z domu Valenti, urodzonej w Palermo) i Anthony’ego Franka Iommi. Matka prowadziła sklep, a ojciec był z zawodu stolarzem.
+            Iommi, zanim został gwiazdą muzyki, pracował w hucie w rodzinnym Birmingham. Ostatniego dnia pracy, przed wyruszeniem ze swoim ówczesnym zespołem na trasę koncertową, został przesunięty do pracy na gilotynie do cięcia metalu. W czasie pracy obciął sobie opuszki dwóch palców (środkowego i serdecznego) u prawej ręki. Leworęczny muzyk używał palców prawej dłoni do przyciskania strun, więc by móc grać skonstruował sam nakładki ze starej kurtki skórzanej i wosku. Obecnie w czasie gry używa specjalnych nakładek na palce. Wydarzenie znacząco wpłynęło na grę Iommiego. Gra sprawiała mu ból, więc obniżył napięcie strun, a niestabilność prowizorycznych nakładek na opuszki palców i utrata zręczności spowodowały, że nie mógł grać szybkich riffów, więc musiał jak najlepiej wykorzystać proste akordy i zwiększył głośność gry. Wszystko to dało nowy rodzaj dźwięku, który stał się charakterystyczny dla muzyki Black Sabbath.
+            </section><br>
+            <button id="button1" type="button" onclick="button1()">Zaciekawiony? Kliknij, aby wyświetlić więcej informacji!</button>
+            <br><br>
+            <div id="pran"></div>
+            <h2>Posłuchaj!</h2>
+            <button class="audi" type="button">Kliknij! Ważne!</button><br><br>
+            <audio controls>
+                <source src="audio/paranoid.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+            <div class="PanelS">
+                <div id="session"></div><br><br>
+                <h2>Po więcej informacji kliknij w zdjęcie!</h2>
+                <a href="https://pl.wikipedia.org/wiki/Tony_Iommi" target="_blank">
+                <img class="photo" alt="Error" src="img/iommi.jpg"/>
+                </a>
+                <p>Przykładowe albumy:</p>
+                <table style="width:100%">
+					<tr>
+					  <th>Album</th>
+					  <th>Rok wydania</th>
+					</tr>
+					<tr>
+					  <td>Paranoid</td>
+					  <td>1970</td>
+					</tr>
+					<tr>
+					  <td>Master pf Reality</td>
+					  <td>1971</td>
+					</tr>
+                    <tr>
+                      <td>Heaven and Hell</td>
+                      <td>1980</td>
+                    </tr>
+				  </table>
+            </div>
+            <div class="Footer">
+                Wykonanie - Sebastian Kutny &copy; Wszelkie prawa zastrzeżone
+            </div>
+        </div>
+    </body>
+</html>

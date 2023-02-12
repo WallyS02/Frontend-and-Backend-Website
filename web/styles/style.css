@@ -1,0 +1,241 @@
+
+            body{
+                background-color: rgba(0, 0, 0, 0.925);
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            .Container {
+                display: grid;
+                grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+                grid-gap: 5px;
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-size: large;
+            }
+            .Header { 
+                grid-area: header;
+                background-color: black;
+                color: red;
+                text-align: center;
+                padding: 15px;
+                overflow: hidden;
+            }
+            .Menu { 
+                grid-area: menu;
+                background-color: rgb(82, 20, 139);
+                color: yellowgreen;
+                text-align: center;
+                padding: 15px;
+                
+            }
+            .Content { 
+                grid-area: main;
+                background-color: rgb(97, 6, 97);
+                color: burlywood;
+                text-align: center;
+                padding: 15px;
+            }
+            .PanelS { 
+                grid-area: right;
+                background-color: rgb(97, 6, 97);
+                color: burlywood;
+                text-align: center;
+                padding: 15px;
+            }
+            .Footer { 
+                grid-area: footer;
+                background-color: rgb(97, 6, 97);
+                color: burlywood;
+                text-align: center;
+                padding: 15px;
+                overflow: hidden;
+            }
+            #Logo {
+                grid-area: header;
+                text-align: center;
+            }
+            #Hello {
+                grid-area: header;
+                text-align: center;
+            }
+            a.divlink{
+                color: yellowgreen;
+                text-decoration: none;
+            }
+            table, th, td{
+                border:1px solid black;
+
+            }
+            .active{
+                background-color: rgb(111, 28, 189);
+                text-decoration: none;
+                color: yellowgreen;
+            }
+            .photo{
+                transition: transform 0.3s ease-in-out;
+            }
+            strong::selection{
+                color: chartreuse;
+                background: chocolate;
+            }
+            .Menu span.expand {
+                display: none;
+            }
+            #opinion{
+                font-family: 'Josefin Sans', sans-serif;
+                color: burlywood;
+                background-color: rgb(97, 6, 97);
+                font-size: inherit;
+                width: 13vmax;
+                height: 25vmin;
+            }
+            #hea{
+                text-align: center;
+                width: 13vmax;
+            }
+            @media only screen and (min-width: 768px) {
+                a.divlink:hover{
+                    background-color: violet;
+                    color: turquoise;
+                }
+                .photo:hover{
+                    cursor: crosshair;
+                    transform: scale(1.15);
+                }
+            }
+            #button2{
+                font-size: large;
+                color: burlywood;
+                border-color: black;
+                background-color: rgb(111, 28, 189);
+            }
+            #button1{
+                color: burlywood;
+                border-color: black;
+                background-color: rgb(111, 28, 189);
+            }
+            #button3{
+                color: burlywood;
+                border-color: black;
+                background-color: rgb(97, 6, 97);
+            }
+            #button4{
+                color: burlywood;
+                border-color: black;
+                background-color: rgb(97, 6, 97);
+            }
+            .area{
+                color: burlywood;
+                border-color: black;
+                background-color: rgb(97, 6, 97);
+            }
+            .audi{
+                color: burlywood;
+                border-color: black;
+                background-color: rgb(111, 28, 189);
+            }
+            .ui-dialog {
+                position: absolute;
+                padding: .2em;
+                font-size: large;
+                background-color: tomato;
+            }
+            .ui-dialog .ui-dialog-titlebar {
+                padding: .4em 1em;
+                position: relative;
+            }
+            .ui-dialog .ui-dialog-title {
+                margin: .1em 0;
+                width: auto;
+                font-size: 35px;
+            }
+            .ui-dialog .ui-dialog-titlebar-close {
+                position: absolute;
+                right: .3em;
+                top: 50%;
+                width: auto;
+                margin: -10px 0 0 0;
+                padding: 1px;
+                height: 20px;
+            }
+            .ui-dialog .ui-dialog-content {
+                position: relative;
+                padding: .5em 1em;
+            }
+            .ui-draggable .ui-dialog-titlebar {
+                cursor: move;
+            }
+            #custom-handle {
+                width: 3em;
+                height: 1.6em;
+                top: 50%;
+                margin-top: -.8em;
+                text-align: center;
+                line-height: 1.6em;
+                background-color: black;
+                color: red;
+            }
+            .ui-slider {
+                position: relative;
+                text-align: left;
+                background-color: thistle;
+                width: 90%;
+            }
+            .ui-slider .ui-slider-handle {
+                position: absolute;
+                width: 1.2em;
+                height: 1.2em;
+                cursor: pointer;
+            }
+            .ui-slider-horizontal {
+                height: .8em;
+            }
+            .ui-slider-horizontal .ui-slider-handle {
+                top: -.3em;
+                margin-left: -.6em;
+            }
+            @media only screen and (max-width: 768px) {
+                .Container{
+                display: grid;
+                grid-template-areas:
+                'header header'
+                'menu menu'
+                'main main'
+                'right right'
+                'footer footer';
+                grid-gap: 5px;
+                width: auto;
+                height: 100%;
+                margin: 0px;
+                text-align: center;
+                font-size: larger;
+                }
+                a.divlink{
+                    color: yellowgreen;
+                    text-decoration: underline;
+                }
+                .Menu span.expand {
+                    display: grid;
+                    float: right;
+                    font-weight: normal;
+                    font-size: 40px;
+                    margin-top: 0px;
+                }
+                .Menu h2 {
+                    margin: 0px;
+                }
+                .Header h1 {
+                    font-size: 150%;
+                    line-height: 28px;
+                }
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+                #ani, #button3, #button2, #button1, #dialog, #opinion, .area, #hea{display: none;}
+            }

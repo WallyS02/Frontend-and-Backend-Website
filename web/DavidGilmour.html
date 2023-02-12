@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>David Gilmour</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <noscript>
+            <style>
+                #button3{
+                    display: none;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <div class="Container">
+            <div class="Header">
+            <div>
+                <div id="Logo"><h1>David Gilmour</h1></div>
+                <div id="Hello"><h1>Pink Floyd</h1></div>
+            </div>
+            </div>
+            <div class="Menu">
+                <h2>Menu<span class="expand">&equiv;</span></h2>
+                <h4>
+                    <a href="index.html" class="divlink">
+                        Strona startowa
+                    </a>
+                    <br>
+                    <br>
+                    <a href="TonyIommi.html" class="divlink">
+                        Tony Iommi
+                    </a>
+                    <br>
+                    <br>
+                    <a class="active" href="DavidGilmour.html">
+                        David Gilmour
+                    </a>
+                    <br>
+                    <br>
+                    <a href="JimiHendrix.html" class="divlink">
+                        Jimi Hendrix
+                    </a>
+                </h4>
+                <button id="button3" type="button" onclick="button3()">Widzisz element tekstu do poprawy? Kliknij i napraw to!</button>
+                <h3 id="hea">Miejsce na twoje notatki w tej sesji!</h3>
+            <textarea id="opinion" rows="4" cols="35">-->Wpisuj tutaj<--</textarea><br>
+            <button class="area" onclick="save_ses()">Zapisz</button>
+            <button class="area" onclick="load_ses()">Wczytaj</button>
+            </div>
+            <div class="Content">
+            <section>
+            <h2>David Jon Gilmour</h2><br>
+            <div id="dialog" title="Ważne!">Wszystkie pliki audio są chronione prawem autorskim wykonawców, strona nie czerpie z nich żadnych korzyści finansowych, ani nie ma na celu naruszenia praw autorskich!</div>
+            (ur. 6 marca 1946 w Cambridge) – brytyjski muzyk, kompozytor, gitarzysta i wokalista, multiinstrumentalista. Najbardziej znany jako długoletni członek zespołu rockowego Pink Floyd.
+            </section>
+            <br><br>
+            <section>
+            David Gilmour urodził się 6 marca 1946 roku w Grantchester, w Cambridge, jako drugie dziecko w zamożnej rodzinie Douglasa Gilmoura, wykładowcy na Uniwersytecie Cambridge i nauczycielki Sylvii Gilmour. Był zmuszony szybko się usamodzielnić. Kiedy miał osiemnaście lat jego rodzice wyjechali na stałe do Stanów Zjednoczonych. W wieku trzynastu lat, korzystając z podręcznika i płyty instruktażowej Pete’a Seegera, opanował podstawy gry na gitarze. Wkrótce potem zaczął występy w lokalnych pubach, początkowo z grupą The Newcomers, później z zespołem The Ramblers. W roku 1964 założył swój własny zespół – Joker's Wild. Repertuar miał głównie charakter taneczny. Grupa grała przeboje zespołów: The Beatles, The Beach Boys, The Four Seasons, choć sięgała również po utwory soulowe, m.in.: Otisa Reddinga. Zespół Joker’s Wild odniósł lokalny sukces, jednak zawiesił działalność w 1967 roku, po nieudanej wyprawie do Francji.David Gilmour i Roger „Syd” Barrett znali się od czasów szkolnych w Cambridge. W szkole średniej Gilmour, wtedy będący już sprawnym muzykiem, udzielał Barrettowi lekcji gry na gitarze. Okazję do wspólnych występów mieli w czasie studiów w Cambridgeshire College of Arts and Technology (od 1963). Lato 1964 roku spędzili grając, jako muzycy uliczni, w miejscowościach południowej Francji. Ich repertuar składał się głównie z przebojów The Beatles.
+            </section>
+            <h2>Ankieta</h2>
+            <form>
+                <label for="fname">Imię:</label><br>
+                <input type="text" id="fname" name="fname" value="Jan"><br><br>
+                <label for="lname">Nazwisko:</label><br><br>
+                <input type="text" id="lname" name="lname" value="Kowalski"><br><br>
+                <label for="email">E-mail:</label><br><br>
+                <input type="email" id="email" name="email" value="snr_albumu@student.pg.edu.pl"><br><br>
+                <label for="phone">Numer telefonu:</label><br><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+                Według ciebie gra Davida jest: <br>
+                <input type="radio" id="Good" name="Opinion" value="Wspaniała">
+                <label for="Good">Wspaniała</label><br>
+                <input type="radio" id="Bad" name="Opinion" value="Niesamowita">
+                <label for="Bad">Niesamowita</label><br>
+                <br/> Twoja ulubiona solówka Davida to: <br>
+                <input type="checkbox" id="b1" name="b1" value="Comfortably Numb">
+                <label for="b1">"Comfortably Numb"</label><br>
+                <input type="checkbox" id="b2" name="b2" value="Money">
+                <label for="b2">"Money"</label><br>
+                <input type="checkbox" id="b3" name="b3" value="Time">
+                <label for="b3">"Time"</label><br>
+                <input type="checkbox" id="b6" name="b6" value="Każda w jego wykonaniu!">
+                <label for="b6">"Każda w jego wykonaniu!"</label><br><br>
+                <label for="favcolor">Ulubiony kolor:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#fff000">
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset">
+                <input type="button" onclick="alert('Utwór Echoes jest być może najdłuższym utworem jaki znasz - trwa aż 23 minuty i 35 sekund, a na koncertach potrafił trwać jeszcze dłużej!')" value="Kliknij po ciekawostkę!">
+            </form>
+            </div>
+            <div class="PanelS">
+                <div id="session"></div><br><br>
+                <h2>Po więcej informacji kliknij w zdjęcie!</h2>
+                <a href="https://pl.wikipedia.org/wiki/David_Gilmour" target="_blank">
+                <img class="photo" alt="Error" src="img/gilmour.jpg"/>
+                </a>
+                <h2>Przykładowe instrumentarium:</h2>
+                <p>Kliknij w miniaturkę, aby podejrzeć zjdęcie</p>
+                <ul>
+					<li>1960' "The Black Strat"</li>
+					<li>Bill Lewis Guitar</li>
+                    <li>"The Red Strat"</li>
+                    <li>Fender 1000 Pedal Steel</li>
+                    <li>#0001 Stratocaster</li>
+                    <li>1960's Blonde Fender Telecaster</li>
+				</ul>
+                <table style="width:100%">
+                <tr>
+					<td><a href="img/blackstrat.jpg">
+                    <img alt="Error" src="img/blackstrat.jpg" width="50" height="50"></a></td>
+					<td><a href="img/billlewis.jpg">
+                    <img alt="Error" src="img/billlewis.jpg" width="50" height="50"></a></td>
+                    <td><a href="img/redstrat.jpg">
+                    <img alt="Error" src="img/redstrat.jpg" width="50" height="50"></a></td>
+                </tr>
+                <tr>
+					<td>1960' "The Black Strat"</td>
+                    <td>Bill Lewis Guitar</td>
+                    <td>"The Red Strat"</td>
+                </tr>
+                <tr>
+                    <td><a href="img/pedalsteel.jpg">
+                    <img alt="Error" src="img/pedalsteel.jpg" width="50" height="50"></a></td>
+                    <td><a href="img/0001strat.jpg">
+                    <img alt="Error" src="img/0001strat.jpg" width="50" height="50"></a></td>
+                    <td><a href="img/blondetele.jpg">
+                    <img alt="Error" src="img/blondetele.jpg" width="50" height="50"></a></td>
+                </tr>
+                <tr>
+					<td>Fender 1000 Pedal Steel</td>
+                    <td>#0001 Stratocaster</td>
+                    <td>1960's Blonde Fender Telecaster</td>
+                </tr>
+				</table>
+                <h2>Posłuchaj!</h2>
+                <button class="audi" type="button">Kliknij! Ważne!</button><br><br>
+                <audio controls>
+                    <source src="audio/money.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="Footer">
+                Wykonanie - Sebastian Kutny &copy; Wszelkie prawa zastrzeżone
+            </div>
+        </div>
+    </body>
+</html>
